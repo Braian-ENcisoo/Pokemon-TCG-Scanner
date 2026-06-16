@@ -406,7 +406,7 @@ h1 { font-family: 'Climate Crisis', sans-serif; font-size: clamp(3.5rem, 6vw, 8.
 
 @media (max-width: 480px) {
     header { padding: 15px 12px; gap: 10px; flex-wrap: wrap; justify-content: space-between; }
-    h1 { font-size: clamp(1.5rem, 8vw, 3rem); }
+    h1 { font-size: clamp(1.8rem, 7vw, 3.2rem); white-space: normal; overflow: visible; }
     main { padding: 20px 15px; }
     .subtitle { margin-top: 10px; letter-spacing: 1px; }
     .btn { margin-top: 30px; padding: 10px 20px; }
@@ -417,11 +417,15 @@ h1 { font-family: 'Climate Crisis', sans-serif; font-size: clamp(3.5rem, 6vw, 8.
     .text-box ul { margin-top: 15px; }
     .text-box li { margin-bottom: 8px; }
     .overlay-wrapper { padding: 15px; }
-    .card-image img { width: clamp(100px, 25vw, 150px); }
+    .card-box { flex-direction: row; gap: 12px; padding: 15px; }
+    .card-image img { width: clamp(80px, 20vw, 120px); flex-shrink: 0; }
+    .card-details { flex: 1; }
+    .card-details h2 { font-size: clamp(1.1rem, 3.5vw, 1.8rem); }
     .top-hits-box { padding: 12px; margin-bottom: 15px; }
     .hit-item { font-size: 0.8rem; }
     .card-details h2 { font-size: clamp(1.3rem, 4vw, 2rem); }
     .card-details { padding: 0; }
+    .price-row { font-size: 0.85rem; margin-bottom: 4px; }
     .setup-section { padding: 50px 15px; }
     .setup-section h2 { margin-bottom: 15px; }
     .setup-container { gap: 12px; margin-top: 30px; }
@@ -440,13 +444,17 @@ h1 { font-family: 'Climate Crisis', sans-serif; font-size: clamp(3.5rem, 6vw, 8.
 
 @media (max-width: 320px) {
     header { padding: 12px 10px; gap: 8px; }
-    h1 { font-size: clamp(1.2rem, 6vw, 2rem); line-height: 1; }
+    h1 { font-size: clamp(1.3rem, 5.5vw, 2.2rem); white-space: normal; line-height: 1.1; }
     .subtitle { font-size: 0.65rem; margin-top: 8px; }
     main { padding: 15px 10px; }
     .btn { margin-top: 20px; padding: 8px 15px; font-size: 0.75rem; }
     .content-section { padding: 20px 10px; }
-    .text-box h2 { font-size: 1.5rem; margin-bottom: 10px; }
+    .text-box h2 { font-size: 1.3rem; margin-bottom: 10px; }
     .overlay-wrapper { padding: 12px; }
+    .card-box { flex-direction: row; gap: 8px; padding: 12px; }
+    .card-image img { width: 70px; }
+    .card-details h2 { font-size: 1.1rem; }
+    .price-row { font-size: 0.75rem; margin-bottom: 2px; }
     .setup-section { padding: 30px 10px; }
     .setup-container { gap: 10px; margin-top: 20px; }
     .setup-card { padding: 15px 10px; width: 100%; }
